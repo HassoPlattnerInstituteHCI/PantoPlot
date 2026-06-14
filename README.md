@@ -1,4 +1,4 @@
-# DualPanto Drawing
+# PantoPlot
 
 Finish this app and draw a nice picture
 
@@ -6,9 +6,9 @@ Finish this app and draw a nice picture
 
 make sure you have `node` installed. 
 
-run `npm install` to download all dependencies. Once done run `npm run dev` to build the project. Then visit http://127.0.0.1:5173/dualpanto-webusb-draw/ to try out your app
+run `npm install` to download all dependencies. Once done run `npm run dev` to build the project. Then visit http://127.0.0.1:5173/panto-plot/ to try out your app
 
-To start click on the "select dualpanto" button, select the serial device that represents your dualpanto, confirm your selection and click on "start comunication with panto"
+To start click on the "Select DualPanto" button, select the serial device that represents your DualPanto, confirm your selection and click on "Start Communication with DualPanto"
 
 
 ## your task
@@ -28,7 +28,10 @@ Here are some more ideas if you want to dig deeper...
 
 ## troubleshooting
 
-As webserial is right now (may 2024) only supported on chromium based browsers, please use google chrome or chromium for testing
-You can also check support for your browser [here](https://caniuse.com/web-serial)
+The Web Serial API (https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API) is right now (June 2026) only supported on chromium based browsers and recent firefox versions (starting May 2026).
 
-So far, this project has been tested under node16 and node20 on windows 10, 11, ubuntu 22 and macos (ARM). If you have any issues please contact martin taraz on his hpi email or open a github issue.
+We strongly recommend using google chrome or chromium for testing as we did not test on any other platform.
+
+You can check support for your browser [here](https://caniuse.com/web-serial)
+
+So far, this project has been tested under node v20, v22, and v24 on windows 10, 11, ubuntu 22 and macos (ARM). If you have any issues please reach out to your TAs through moodle.

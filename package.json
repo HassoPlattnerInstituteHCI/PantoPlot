@@ -11,13 +11,13 @@
   "dependencies": {
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
-    "@mui/icons-material": "^5.15.15",
-    "@mui/material": "latest",
+    "@mui/icons-material": "^9.1.1",
+    "@mui/material": "^9.1.1",
     "lodash": "^4.17.21",
     "react": "latest",
     "react-dom": "latest",
     "ts-node": "^10.9.2",
-    "uuid": "^9.0.1"
+    "uuid": "^14.0.0"
   },
   "devDependencies": {
     "@types/chai": "^4.3.14",
@@ -26,10 +26,17 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "@types/uuid": "^9.0.8",
-    "@vitejs/plugin-react": "latest",
+    "@vitejs/plugin-react": "^5.2.0",
     "chai": "^5.1.0",
-    "mocha": "^10.4.0",
+    "mocha": "^11.7.6",
     "typescript": "latest",
-    "vite": "latest"
+    "vite": "^7.3.5"
+  },
+  "overrides": {
+    "serialize-javascript": "^7.0.5",
+    "esbuild": "^0.28.1",
+    "mocha": {
+      "diff": "^8.0.3"
+    }
   }
 }

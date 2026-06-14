@@ -195,7 +195,7 @@ export default function App() {
 
     useEffect(() => {
         const canvas = getCanvas();
-        if(enableMouse) {
+        if (enableMouse) {
             console.log("add event listener");
             canvas.addEventListener("mousemove", mouseDrawingListener)
         } else {
@@ -237,7 +237,9 @@ export default function App() {
     }
 
     function setupOnWindowResize() {
-        document.addEventListener("resize", (e) => {resizeCanvas()});
+        document.addEventListener("resize", (e) => {
+            resizeCanvas()
+        });
     }
 
     // on component load do a couple of setup things
@@ -266,7 +268,7 @@ export default function App() {
 
 
     useEffect(() => {
-        setPantoConnectedBtnText(pantoConnected ? "Stop Communication with panto" : "Start Communication with panto");
+        setPantoConnectedBtnText(pantoConnected ? "Stop Communication with DualPanto" : "Start Communication with DualPanto");
     }, [pantoConnected]);
 
     const header_btn_style = {color: "#ffffff"};
@@ -332,8 +334,9 @@ export default function App() {
             {/*TODO move the appbar into a modal*/}
             <AppBar position="fixed">
                 <Toolbar>
-                    <Button sx={header_btn_style} id={"select_panto_btn"} onClick={requestDevice}> Select
-                        DualPanto</Button>
+                    <Button sx={header_btn_style} id={"select_panto_btn"} onClick={requestDevice}>
+                        Select DualPanto
+                    </Button>
                     <Button sx={header_btn_style} id={"toggle_panto_com_btn"}
                             onClick={handlePantoConnectToggle}>{pantoConnectedBtnText}</Button>
                 </Toolbar>
